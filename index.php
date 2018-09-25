@@ -40,6 +40,7 @@ break;
 case ('шаг 4'):
 case ('/step_4'):
 sendMessage($chat_id, ''. $first_name . ', Вы выбрали шаг 4', $encodedMarkup );
+break;
 case ('шаг 5'):
 case ('/step_5'):
 sendMessage($chat_id, ''. $first_name . ', Вы выбрали шаг 5!!! Это конец', $encodedMarkup );
