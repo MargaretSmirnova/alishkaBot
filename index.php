@@ -17,8 +17,10 @@ $message = $output['message']['text']; // Выделим сообщение со
 */
 $replyMarkup = array(
   'keyboard' => array(
-      array("Шаг 1".unichr('\uD83D\uDD27'), "Шаг 2", "Шаг 3", "Шаг 4", "Шаг 5")
-  )
+      array("Шаг 1", "Шаг 2"), 
+      array("Шаг 3", "Шаг 4", "Шаг 5")
+  ),
+  'resize_keyboard' => true, 
 );
 $encodedMarkup = json_encode($replyMarkup);
 switch(strtolower_ru($message)) {
