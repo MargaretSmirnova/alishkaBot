@@ -17,7 +17,7 @@ $message = $output['message']['text']; // Выделим сообщение со
 */
 $replyMarkup = array(
   'keyboard' => array(
-      array("Шаг 1 \uD83D\uDD27", "Шаг 2", "Шаг 3", "Шаг 4", "Шаг 5")
+      array("Шаг 1".unichr('\uD83D\uDD27'), "Шаг 2", "Шаг 3", "Шаг 4", "Шаг 5")
   )
 );
 $encodedMarkup = json_encode($replyMarkup);
@@ -65,4 +65,7 @@ function strtolower_ru($text) {
   $alfavitlover = array('ё','й','ц','у','к','е','н','г', 'ш','щ','з','х','ъ','ф','ы','в', 'а','п','р','о','л','д','ж','э', 'я','ч','с','м','и','т','ь','б','ю');
     $alfavitupper = array('Ё','Й','Ц','У','К','Е','Н','Г', 'Ш','Щ','З','Х','Ъ','Ф','Ы','В', 'А','П','Р','О','Л','Д','Ж','Э', 'Я','Ч','С','М','И','Т','Ь','Б','Ю');
 return str_replace($alfavitupper,$alfavitlover,strtolower($text));
+}
+function unichr($i) {
+    return iconv('UCS-4LE', 'UTF-8', pack('V', $i));
 }
