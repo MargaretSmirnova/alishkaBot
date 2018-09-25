@@ -29,18 +29,18 @@ break;
 case ('/start'):
 sendMessage($chat_id, 'Всем привет! Меня зовут Алина, и сегодня я хочу поделиться с вами 5 способами, как можно РЕАЛЬНО заработать деньги через интернет. Итак, поехали)', $encodedMarkup );
 break;
-case ('Шаг 2'):
+case ('шаг 2'):
 case ('/step_2'):
 sendMessage($chat_id, 'Добрый день, '. $first_name . '! Вы выбрали шаг 2', $encodedMarkup );
 break;
-case ('Шаг 3'):
+case ('шаг 3'):
 case ('/step_3'):
 sendMessage($chat_id, 'И снова привет, '. $first_name . '! Вы выбрали шаг 3', $encodedMarkup );
 break;
-case ('Шаг 4'):
+case ('шаг 4'):
 case ('/step_4'):
 sendMessage($chat_id, ''. $first_name . ', Вы выбрали шаг 4', $encodedMarkup );
-case ('Шаг 5'):
+case ('шаг 5'):
 case ('/step_5'):
 sendMessage($chat_id, ''. $first_name . ', Вы выбрали шаг 5!!! Это конец', $encodedMarkup );
 break;
