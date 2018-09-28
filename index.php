@@ -97,10 +97,10 @@ Text.ru
 Если данный вид заработка вам не интересен, то скорее жми далее.' , $encodedMarkupStep1 );
 break;
 case ('назад'):
-sendMessage($chat_id, 'Выберите следующий шаг', $replyMarkupSetup );
+sendMessage($chat_id, 'Выберите следующий шаг', $encodedMarkupSetup );
 break;
 case ('/start'):
-sendMessage($chat_id, 'Всем привет! Меня зовут Алина, и сегодня я хочу поделиться с вами 5 способами, как можно РЕАЛЬНО заработать деньги через интернет. Итак, поехали)', $replyMarkupSetup );
+sendMessage($chat_id, 'Всем привет! Меня зовут Алина, и сегодня я хочу поделиться с вами 5 способами, как можно РЕАЛЬНО заработать деньги через интернет. Итак, поехали)', $encodedMarkupSetup );
 break;
 case ('шаг 2'):
 case ('/step_2'):
